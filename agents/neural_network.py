@@ -351,7 +351,7 @@ class GeneticAlgorithm(object):
       
 ##neuroevolution    
 
-experiment_name = 'experiment_pop_100_gen_100'
+experiment_name = 'models/experiment_pop_100_gen_100'
 
 if not os.path.exists(experiment_name):
 	os.makedirs(experiment_name)
@@ -363,7 +363,7 @@ if __name__=='__main__':
                           mutation_rate=0.3,
                           load_model=True,
                           es_strategy=True,
-                          model='state_generation_99.pkl',
+                          model='best_model',
                           state=120)
 
     env = Environment(speed="fastest",
